@@ -1,0 +1,339 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"'x'"
+      , "id":4294967295
+      , "src":"4153035376"
+      , "dst":"4161854480"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi10EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'x'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"Floating-point log10(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"149"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Convert(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                  , "line":"57"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"FP Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                  , "line":"57"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'x'"
+          , "id":4153035376
+          , "start":"1.00"
+          , "parent":"_ZTS13KernelComputeILi10EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Floating-point log10"
+          , "id":4159468752
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":149
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Convert"
+          , "id":4159468416
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":57
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"FP Compare"
+          , "id":4140146384
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":57
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":4161854480
+          , "end":"3.00"
+          , "parent":"_ZTS13KernelComputeILi10EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":4153035376
+          , "to":4159468416
+        }
+        , {
+          "from":4159468752
+          , "to":4140146384
+        }
+        , {
+          "from":4140146384
+          , "to":4161854480
+        }
+        , {
+          "from":4153035376
+          , "to":4161854480
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'x'"
+      , "id":4294967295
+      , "src":"4145537840"
+      , "dst":"4163453472"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'x'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"Convert(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                  , "line":"57"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Floating-point log10(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"149"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"FP Compare(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                  , "line":"57"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'x'"
+          , "id":4145537840
+          , "start":"1.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Convert"
+          , "id":4163593312
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":57
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Floating-point log10"
+          , "id":4159131760
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":149
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"FP Compare"
+          , "id":4157643904
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":57
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":4163453472
+          , "end":"27.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/speculated_iterations/build/src/speculated_iterations.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":4145537840
+          , "to":4163593312
+        }
+        , {
+          "from":4163593312
+          , "to":4159131760
+        }
+        , {
+          "from":4159131760
+          , "to":4157643904
+        }
+        , {
+          "from":4157643904
+          , "to":4163453472
+        }
+        , {
+          "from":4145537840
+          , "to":4163453472
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
