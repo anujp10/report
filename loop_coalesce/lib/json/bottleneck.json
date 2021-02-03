@@ -1,0 +1,1861 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1157326800"
+      , "dst":"1173621712"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1157326800
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1173621712
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1157326800
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1173621712
+        }
+        , {
+          "from":1157326800
+          , "to":1173621712
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1252952960"
+      , "dst":"1173748864"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1252952960
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1173748864
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1252952960
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1173748864
+        }
+        , {
+          "from":1252952960
+          , "to":1173748864
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1253596720"
+      , "dst":"1176054544"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1253596720
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1176054544
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1253596720
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1176054544
+        }
+        , {
+          "from":1253596720
+          , "to":1176054544
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1174196992"
+      , "dst":"1180923568"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1174196992
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1180923568
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1174196992
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1180923568
+        }
+        , {
+          "from":1174196992
+          , "to":1180923568
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1174064528"
+      , "dst":"1188842752"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1174064528
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1188842752
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1174064528
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1188842752
+        }
+        , {
+          "from":1174064528
+          , "to":1188842752
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1172273168"
+      , "dst":"1189233744"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1172273168
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1189233744
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1172273168
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1189233744
+        }
+        , {
+          "from":1172273168
+          , "to":1189233744
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1180742672"
+      , "dst":"1190530320"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1180742672
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1190530320
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1180742672
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1190530320
+        }
+        , {
+          "from":1180742672
+          , "to":1190530320
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1253497232"
+      , "dst":"1253002784"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1253497232
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1253002784
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1253497232
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1253002784
+        }
+        , {
+          "from":1253497232
+          , "to":1253002784
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1168303696"
+      , "dst":"1254204560"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1168303696
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1254204560
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1168303696
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1254204560
+        }
+        , {
+          "from":1168303696
+          , "to":1254204560
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1156307728"
+      , "dst":"1263757808"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1156307728
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1263757808
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1156307728
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1263757808
+        }
+        , {
+          "from":1156307728
+          , "to":1263757808
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1243174672"
+      , "dst":"1263857504"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1243174672
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1263857504
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1243174672
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1263857504
+        }
+        , {
+          "from":1243174672
+          , "to":1263857504
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1188098448"
+      , "dst":"1263873664"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1188098448
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1263873664
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1188098448
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1263873664
+        }
+        , {
+          "from":1188098448
+          , "to":1263873664
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1265174000"
+      , "dst":"1263956400"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1265174000
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1263956400
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1265174000
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1263956400
+        }
+        , {
+          "from":1265174000
+          , "to":1263956400
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1188688272"
+      , "dst":"1263972560"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1188688272
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":84
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1263972560
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1188688272
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1263972560
+        }
+        , {
+          "from":1188688272
+          , "to":1263972560
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1255103184"
+      , "dst":"1312894576"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1255103184
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1312894576
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1255103184
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1312894576
+        }
+        , {
+          "from":1255103184
+          , "to":1312894576
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'tmp'"
+      , "id":4294967295
+      , "src":"1272659920"
+      , "dst":"1319322800"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi2EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'tmp'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<2>.B6(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                  , "line":"83"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'tmp'"
+          , "id":1272659920
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<2>.B6"
+          , "id":1175569056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1319322800
+          , "end":"2.00"
+          , "parent":"_ZTS13KernelComputeILi2EE.B5"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_coalesce/build/src/loop_coalesce.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1175569056
+          , "to":1175569056
+        }
+        , {
+          "from":1272659920
+          , "to":1175569056
+        }
+        , {
+          "from":1175569056
+          , "to":1319322800
+        }
+        , {
+          "from":1272659920
+          , "to":1319322800
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

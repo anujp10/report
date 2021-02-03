@@ -1,0 +1,250 @@
+{
+  "nodes":
+  [
+    {
+      "name":"KernelCompute<1>"
+      , "id":1145246712
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelCompute<1>.B13"
+          , "id":1146177584
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 8"
+              , "id":1170211184
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B6"
+          , "id":1146177024
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":1161654784
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B10"
+          , "id":1146177344
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 6"
+              , "id":1166719872
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B11"
+          , "id":1146177424
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 7"
+              , "id":1169265984
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B7"
+          , "id":1146177104
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":1163310848
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B9"
+          , "id":1146177264
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":1165060960
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B12"
+          , "id":1146177504
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B3"
+          , "id":1146176784
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":1146177184
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B4"
+          , "id":1146176864
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":1157912048
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":1149860192
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B5"
+          , "id":1146176944
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B0"
+          , "id":1145550928
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B1"
+          , "id":1145551232
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<1>.B2"
+          , "id":1146176704
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1150791616
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<1>.B14"
+          , "id":1146177664
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"KernelCompute<2>"
+      , "id":1145445592
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelCompute<2>.B6"
+          , "id":1146919184
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 12"
+              , "id":1249393376
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<2>.B7"
+          , "id":1146919264
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 13"
+              , "id":1251172256
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<2>.B2"
+          , "id":1146918864
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 10"
+              , "id":1244155296
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 9"
+              , "id":1227694320
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<2>.B5"
+          , "id":1146919104
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<2>.B8"
+          , "id":1146919344
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<2>.B1"
+          , "id":1146918784
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<2>.B3"
+          , "id":1146918944
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelCompute<2>.B4"
+          , "id":1146919024
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 11"
+              , "id":1246721904
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelCompute<2>.B0"
+          , "id":1146916960
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
