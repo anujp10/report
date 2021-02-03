@@ -1,0 +1,2315 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"799939008"
+      , "dst":"728260128"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":799939008
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":728260128
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":799939008
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":728260128
+        }
+        , {
+          "from":799939008
+          , "to":728260128
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"799941472"
+      , "dst":"728262768"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":799941472
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":728262768
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":799941472
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":728262768
+        }
+        , {
+          "from":799941472
+          , "to":728262768
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"799943936"
+      , "dst":"797446960"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":799943936
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":797446960
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":799943936
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":797446960
+        }
+        , {
+          "from":799943936
+          , "to":797446960
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"799946400"
+      , "dst":"797449680"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":799946400
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":797449680
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":799946400
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":797449680
+        }
+        , {
+          "from":799946400
+          , "to":797449680
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"799948864"
+      , "dst":"797452400"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":799948864
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":28
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":797452400
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":799948864
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":797452400
+        }
+        , {
+          "from":799948864
+          , "to":797452400
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"801173552"
+      , "dst":"797455120"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":801173552
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":797455120
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":801173552
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":797455120
+        }
+        , {
+          "from":801173552
+          , "to":797455120
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"801176016"
+      , "dst":"797457840"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":801176016
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":797457840
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":801176016
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":797457840
+        }
+        , {
+          "from":801176016
+          , "to":797457840
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"801178480"
+      , "dst":"800528176"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<1>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":801178480
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<1>.B8"
+          , "id":726690992
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":800528176
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":726690992
+          , "to":726690992
+        }
+        , {
+          "from":801178480
+          , "to":726690992
+        }
+        , {
+          "from":726690992
+          , "to":800528176
+        }
+        , {
+          "from":801178480
+          , "to":800528176
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"791555008"
+      , "dst":"791588000"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi1EE.B8"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"case(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"75"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Floating-point sqrt(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"171"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"f32 *(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"28"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"171"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"75"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":791555008
+          , "start":"7.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B8"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"case"
+          , "id":791574080
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Floating-point sqrt"
+          , "id":791577104
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":171
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"f32 *"
+          , "id":791579696
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":28
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":791578832
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":171
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":791587568
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":791588000
+          , "end":"25.00"
+          , "parent":"_ZTS13KernelComputeILi1EE.B8"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":791555008
+          , "to":791574080
+        }
+        , {
+          "from":791574080
+          , "to":791577104
+        }
+        , {
+          "from":791577104
+          , "to":791578832
+        }
+        , {
+          "from":791555008
+          , "to":791587568
+        }
+        , {
+          "from":791579696
+          , "to":791587568
+        }
+        , {
+          "from":791587568
+          , "to":791588000
+        }
+        , {
+          "from":791555008
+          , "to":791588000
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"794516288"
+      , "dst":"800003392"
+      , "type":"fMAX/II"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B8"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"case(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"75"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Floating-point sqrt(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"171"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"f32 *(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"28"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                  , "line":"171"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Select(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"75"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":794516288
+          , "start":"7.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B8"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"case"
+          , "id":791608416
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Floating-point sqrt"
+          , "id":791610768
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":171
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"f32 *"
+          , "id":791612784
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":28
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":791612112
+          , "debug":
+          [
+            [
+              {
+                "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/detail/builtins.hpp"
+                , "line":171
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Select"
+          , "id":800003056
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":800003392
+          , "end":"25.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B8"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":75
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":794516288
+          , "to":791608416
+        }
+        , {
+          "from":791608416
+          , "to":791610768
+        }
+        , {
+          "from":791610768
+          , "to":791612112
+        }
+        , {
+          "from":791612784
+          , "to":800003056
+        }
+        , {
+          "from":794516288
+          , "to":800003056
+        }
+        , {
+          "from":800003056
+          , "to":800003392
+        }
+        , {
+          "from":794516288
+          , "to":800003392
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"715858560"
+      , "dst":"724632016"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":715858560
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":724632016
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":715858560
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":724632016
+        }
+        , {
+          "from":715858560
+          , "to":724632016
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"766079024"
+      , "dst":"727264688"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":766079024
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":727264688
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":766079024
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":727264688
+        }
+        , {
+          "from":766079024
+          , "to":727264688
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"767061296"
+      , "dst":"729368864"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":767061296
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":729368864
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":767061296
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":729368864
+        }
+        , {
+          "from":767061296
+          , "to":729368864
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"766892128"
+      , "dst":"731593936"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":766892128
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":731593936
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":766892128
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":731593936
+        }
+        , {
+          "from":766892128
+          , "to":731593936
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"723246064"
+      , "dst":"757287568"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":723246064
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":757287568
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":723246064
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":757287568
+        }
+        , {
+          "from":723246064
+          , "to":757287568
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"761361952"
+      , "dst":"757288000"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":761361952
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":757288000
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":761361952
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":757288000
+        }
+        , {
+          "from":761361952
+          , "to":757288000
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"763426448"
+      , "dst":"798602320"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":763426448
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":28
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":798602320
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":763426448
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":798602320
+        }
+        , {
+          "from":763426448
+          , "to":798602320
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"'temp_r'"
+      , "id":4294967295
+      , "src":"766894304"
+      , "dst":"800264464"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS13KernelComputeILi0EE.B6"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"'temp_r'"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: KernelCompute<0>.B8(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                  , "line":"74"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"'temp_r'"
+          , "id":766894304
+          , "start":"6.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B6"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"KernelCompute<0>.B8"
+          , "id":754087632
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":800264464
+          , "end":"8.00"
+          , "parent":"_ZTS13KernelComputeILi0EE.B7"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_interleaving/build/src/max_interleaving.cpp"
+                , "line":77
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":754087632
+          , "to":754087632
+        }
+        , {
+          "from":766894304
+          , "to":754087632
+        }
+        , {
+          "from":754087632
+          , "to":800264464
+        }
+        , {
+          "from":766894304
+          , "to":800264464
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
