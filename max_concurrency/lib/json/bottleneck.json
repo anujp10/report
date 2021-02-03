@@ -1,0 +1,1955 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1761052912"
+      , "dst":"1739827936"
+      , "concurrency":"4"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi4EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi4EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"4"
+          , "Concurrency value: ":"4"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<4>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<4>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<4>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1761052912
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi4EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<4>.B3"
+          , "id":1680952384
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<4>.B2"
+          , "id":1698897888
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<4>.B5"
+          , "id":1681356064
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1739827936
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi4EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1680952384
+          , "to":1680952384
+        }
+        , {
+          "from":1680952384
+          , "to":1698897888
+        }
+        , {
+          "from":1681356064
+          , "to":1681356064
+        }
+        , {
+          "from":1698897888
+          , "to":1681356064
+        }
+        , {
+          "from":1761052912
+          , "to":1680952384
+        }
+        , {
+          "from":1681356064
+          , "to":1739827936
+        }
+        , {
+          "from":1761052912
+          , "to":1739827936
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"a1"
+      , "id":4294967295
+      , "src":"1745357440"
+      , "dst":"1745956960"
+      , "concurrency":"4"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi4EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"a1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"4"
+          , "Concurrency value: ":"4"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<4>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<4>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<4>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"a1"
+          , "id":1745357440
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi4EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<4>.B3"
+          , "id":1680952384
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<4>.B2"
+          , "id":1698897888
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<4>.B5"
+          , "id":1681356064
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1745956960
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi4EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1680952384
+          , "to":1680952384
+        }
+        , {
+          "from":1680952384
+          , "to":1698897888
+        }
+        , {
+          "from":1681356064
+          , "to":1681356064
+        }
+        , {
+          "from":1698897888
+          , "to":1681356064
+        }
+        , {
+          "from":1745357440
+          , "to":1680952384
+        }
+        , {
+          "from":1681356064
+          , "to":1745956960
+        }
+        , {
+          "from":1745357440
+          , "to":1745956960
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"a1"
+      , "id":4294967295
+      , "src":"1772108816"
+      , "dst":"1694155440"
+      , "concurrency":"3"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi0EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"a1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Concurrency value: ":"3"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<0>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<0>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<0>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"a1"
+          , "id":1772108816
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi0EE.B1"
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<0>.B3"
+          , "id":1714720784
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<0>.B2"
+          , "id":1778581712
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<0>.B5"
+          , "id":1697692640
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1694155440
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi0EE.B4"
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1714720784
+          , "to":1714720784
+        }
+        , {
+          "from":1714720784
+          , "to":1778581712
+        }
+        , {
+          "from":1697692640
+          , "to":1697692640
+        }
+        , {
+          "from":1778581712
+          , "to":1697692640
+        }
+        , {
+          "from":1772108816
+          , "to":1714720784
+        }
+        , {
+          "from":1697692640
+          , "to":1694155440
+        }
+        , {
+          "from":1772108816
+          , "to":1694155440
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1680945760"
+      , "dst":"1757525200"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi1EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi1EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"1"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<1>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<1>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<1>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1680945760
+          , "start":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<1>.B3"
+          , "id":1760073600
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<1>.B2"
+          , "id":1697263648
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<1>.B5"
+          , "id":1743939520
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1757525200
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi1EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1760073600
+          , "to":1760073600
+        }
+        , {
+          "from":1760073600
+          , "to":1697263648
+        }
+        , {
+          "from":1697263648
+          , "to":1743939520
+        }
+        , {
+          "from":1743939520
+          , "to":1743939520
+        }
+        , {
+          "from":1680945760
+          , "to":1760073600
+        }
+        , {
+          "from":1743939520
+          , "to":1757525200
+        }
+        , {
+          "from":1680945760
+          , "to":1757525200
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1680941344"
+      , "dst":"1778736752"
+      , "concurrency":"1"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi1EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi1EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"1"
+          , "Concurrency value: ":"1"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<1>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<1>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<1>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1680941344
+          , "start":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<1>.B3"
+          , "id":1760073600
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<1>.B2"
+          , "id":1697263648
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<1>.B5"
+          , "id":1743939520
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1778736752
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi1EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1760073600
+          , "to":1760073600
+        }
+        , {
+          "from":1760073600
+          , "to":1697263648
+        }
+        , {
+          "from":1697263648
+          , "to":1743939520
+        }
+        , {
+          "from":1743939520
+          , "to":1743939520
+        }
+        , {
+          "from":1680941344
+          , "to":1760073600
+        }
+        , {
+          "from":1743939520
+          , "to":1778736752
+        }
+        , {
+          "from":1680941344
+          , "to":1778736752
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1698318224"
+      , "dst":"1774164464"
+      , "concurrency":"2"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi2EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi2EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"2"
+          , "Concurrency value: ":"2"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<2>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<2>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<2>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1698318224
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi2EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<2>.B3"
+          , "id":1681414720
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<2>.B2"
+          , "id":1698935344
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<2>.B5"
+          , "id":1677263248
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1774164464
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1681414720
+          , "to":1681414720
+        }
+        , {
+          "from":1681414720
+          , "to":1698935344
+        }
+        , {
+          "from":1677263248
+          , "to":1677263248
+        }
+        , {
+          "from":1698935344
+          , "to":1677263248
+        }
+        , {
+          "from":1698318224
+          , "to":1681414720
+        }
+        , {
+          "from":1677263248
+          , "to":1774164464
+        }
+        , {
+          "from":1698318224
+          , "to":1774164464
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"a1"
+      , "id":4294967295
+      , "src":"1728163056"
+      , "dst":"1774164896"
+      , "concurrency":"2"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi2EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"a1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"2"
+          , "Concurrency value: ":"2"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<2>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<2>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<2>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"a1"
+          , "id":1728163056
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi2EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<2>.B3"
+          , "id":1681414720
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<2>.B2"
+          , "id":1698935344
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<2>.B5"
+          , "id":1677263248
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1774164896
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi2EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1681414720
+          , "to":1681414720
+        }
+        , {
+          "from":1681414720
+          , "to":1698935344
+        }
+        , {
+          "from":1677263248
+          , "to":1677263248
+        }
+        , {
+          "from":1698935344
+          , "to":1677263248
+        }
+        , {
+          "from":1728163056
+          , "to":1681414720
+        }
+        , {
+          "from":1677263248
+          , "to":1774164896
+        }
+        , {
+          "from":1728163056
+          , "to":1774164896
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"a1"
+      , "id":4294967295
+      , "src":"1682494928"
+      , "dst":"1682498672"
+      , "concurrency":"16"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi16EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"a1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"16"
+          , "Concurrency value: ":"16"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<16>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<16>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<16>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"a1"
+          , "id":1682494928
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi16EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<16>.B3"
+          , "id":1729420784
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<16>.B2"
+          , "id":1695516528
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<16>.B5"
+          , "id":1710432208
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1682498672
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi16EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1729420784
+          , "to":1729420784
+        }
+        , {
+          "from":1729420784
+          , "to":1695516528
+        }
+        , {
+          "from":1695516528
+          , "to":1710432208
+        }
+        , {
+          "from":1710432208
+          , "to":1710432208
+        }
+        , {
+          "from":1682494928
+          , "to":1729420784
+        }
+        , {
+          "from":1710432208
+          , "to":1682498672
+        }
+        , {
+          "from":1682494928
+          , "to":1682498672
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1729864128"
+      , "dst":"1694157056"
+      , "concurrency":"16"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi16EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi16EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"16"
+          , "Concurrency value: ":"16"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<16>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<16>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<16>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1729864128
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi16EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<16>.B3"
+          , "id":1729420784
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<16>.B2"
+          , "id":1695516528
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<16>.B5"
+          , "id":1710432208
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1694157056
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi16EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1729420784
+          , "to":1729420784
+        }
+        , {
+          "from":1729420784
+          , "to":1695516528
+        }
+        , {
+          "from":1695516528
+          , "to":1710432208
+        }
+        , {
+          "from":1710432208
+          , "to":1710432208
+        }
+        , {
+          "from":1729864128
+          , "to":1729420784
+        }
+        , {
+          "from":1710432208
+          , "to":1694157056
+        }
+        , {
+          "from":1729864128
+          , "to":1694157056
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"a1"
+      , "id":4294967295
+      , "src":"1709806736"
+      , "dst":"1726812272"
+      , "concurrency":"8"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi8EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"a1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"8"
+          , "Concurrency value: ":"8"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<8>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<8>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<8>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"a1"
+          , "id":1709806736
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi8EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<8>.B3"
+          , "id":1714714704
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<8>.B2"
+          , "id":1682245216
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<8>.B5"
+          , "id":1730212032
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1726812272
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi8EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1714714704
+          , "to":1714714704
+        }
+        , {
+          "from":1714714704
+          , "to":1682245216
+        }
+        , {
+          "from":1682245216
+          , "to":1730212032
+        }
+        , {
+          "from":1730212032
+          , "to":1730212032
+        }
+        , {
+          "from":1709806736
+          , "to":1714714704
+        }
+        , {
+          "from":1730212032
+          , "to":1726812272
+        }
+        , {
+          "from":1709806736
+          , "to":1726812272
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"?"
+      , "id":4294967295
+      , "src":"1698900288"
+      , "dst":"1780825072"
+      , "concurrency":"8"
+      , "type":"Occupancy limiter"
+      , "brief":"Data dependency"
+      , "loop":"_ZTS6KernelILi8EE.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Loop: ":"_ZTS6KernelILi8EE.B1"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"58"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Data dependency"
+          , "Max concurrency pragma: ":"8"
+          , "Concurrency value: ":"8"
+          , "Loop feedback path that lowered occupancy: ":
+          [
+            {
+              "type":"text"
+              , "text":"Loop: Kernel<8>.B3(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"60"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Basic block: Kernel<8>.B2(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop: Kernel<8>.B5(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                  , "line":"62"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"?"
+          , "id":1698900288
+          , "start":"5.00"
+          , "parent":"_ZTS6KernelILi8EE.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Kernel<8>.B3"
+          , "id":1714714704
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":60
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Kernel<8>.B2"
+          , "id":1682245216
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"bb"
+        }
+        , {
+          "name":"Kernel<8>.B5"
+          , "id":1730212032
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":62
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1780825072
+          , "end":"1.00"
+          , "parent":"_ZTS6KernelILi8EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/max_concurrency/build/src/max_concurrency.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1714714704
+          , "to":1714714704
+        }
+        , {
+          "from":1714714704
+          , "to":1682245216
+        }
+        , {
+          "from":1682245216
+          , "to":1730212032
+        }
+        , {
+          "from":1730212032
+          , "to":1730212032
+        }
+        , {
+          "from":1698900288
+          , "to":1714714704
+        }
+        , {
+          "from":1730212032
+          , "to":1780825072
+        }
+        , {
+          "from":1698900288
+          , "to":1780825072
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
