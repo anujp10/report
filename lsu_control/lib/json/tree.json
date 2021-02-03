@@ -1,0 +1,116 @@
+{
+  "nodes":
+  [
+    {
+      "name":"KernelPrefetch"
+      , "id":1546126904
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelPrefetch.B0"
+          , "id":1546378992
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelPrefetch.B1"
+          , "id":1547007664
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1549448832
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":1550698416
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelPrefetch.B2"
+          , "id":1547007744
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"KernelDefault"
+      , "id":1546284536
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelDefault.B1"
+          , "id":1547063056
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":1566660160
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 4"
+              , "id":1561175744
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelDefault.B2"
+          , "id":1547064160
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelDefault.B0"
+          , "id":1547109024
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"KernelBurst"
+      , "id":1546280856
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelBurst.B2"
+          , "id":1547057232
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelBurst.B1"
+          , "id":1547056736
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":1559107904
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":1558155968
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelBurst.B0"
+          , "id":1547054944
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
