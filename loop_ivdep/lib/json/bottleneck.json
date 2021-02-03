@@ -1,0 +1,316 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"temp_buffer"
+      , "id":4294967295
+      , "src":"2460464256"
+      , "dst":"2589425168"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS13KernelComputeILm128EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"temp_buffer"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"43"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Ivdep safelen pragma: ":"128"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"temp_buffer"
+          , "id":2460464256
+          , "start":"3.00"
+          , "parent":"_ZTS13KernelComputeILm128EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2374232016
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2583234192
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2589425168
+          , "end":"11.00"
+          , "parent":"_ZTS13KernelComputeILm128EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2460464256
+          , "to":2374232016
+        }
+        , {
+          "from":2374232016
+          , "to":2583234192
+        }
+        , {
+          "from":2583234192
+          , "to":2589425168
+        }
+        , {
+          "from":2460464256
+          , "to":2589425168
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"temp_buffer"
+      , "id":4294967295
+      , "src":"2574178112"
+      , "dst":"2418657936"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS13KernelComputeILm1EE.B4"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"temp_buffer"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"43"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Ivdep safelen pragma: ":"1"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"f32 +(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"temp_buffer"
+          , "id":2574178112
+          , "start":"10.00"
+          , "parent":"_ZTS13KernelComputeILm1EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":2564371648
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"f32 +"
+          , "id":2374605008
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":2378223888
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":2418657936
+          , "end":"15.00"
+          , "parent":"_ZTS13KernelComputeILm1EE.B4"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/loop_ivdep/build/src/loop_ivdep.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":2574178112
+          , "to":2564371648
+        }
+        , {
+          "from":2564371648
+          , "to":2374605008
+        }
+        , {
+          "from":2374605008
+          , "to":2378223888
+        }
+        , {
+          "from":2378223888
+          , "to":2418657936
+        }
+        , {
+          "from":2574178112
+          , "to":2418657936
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
