@@ -1,0 +1,2257 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1944427568"
+      , "dst":"1943567664"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi2EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"149"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1944427568
+          , "start":"6.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1944462624
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914386480
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1914423568
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1914383936
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1943596496
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944465696
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1944490608
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914447680
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944475472
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914426112
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944325712
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1943415456
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1944500864
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944503408
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1943581568
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1943595824
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1943567664
+          , "end":"12.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1914423568
+          , "to":1914426112
+        }
+        , {
+          "from":1944475472
+          , "to":1943415456
+        }
+        , {
+          "from":1944427568
+          , "to":1944503408
+        }
+        , {
+          "from":1943596496
+          , "to":1943581568
+        }
+        , {
+          "from":1943581568
+          , "to":1943567664
+        }
+        , {
+          "from":1944427568
+          , "to":1943567664
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1944452320"
+      , "dst":"1914372672"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi2EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"149"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1944452320
+          , "start":"6.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944437344
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944373728
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944325712
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914386480
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1914372672
+          , "end":"12.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1944452320
+          , "to":1944437344
+        }
+        , {
+          "from":1944452320
+          , "to":1944373728
+        }
+        , {
+          "from":1944452320
+          , "to":1944325712
+        }
+        , {
+          "from":1944437344
+          , "to":1914386480
+        }
+        , {
+          "from":1944373728
+          , "to":1914386480
+        }
+        , {
+          "from":1944325712
+          , "to":1914386480
+        }
+        , {
+          "from":1914386480
+          , "to":1914372672
+        }
+        , {
+          "from":1944452320
+          , "to":1914372672
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1971345760"
+      , "dst":"1914412464"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi2EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"149"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1971345760
+          , "start":"6.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944465696
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971311824
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944401344
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914426112
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1914412464
+          , "end":"12.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1971345760
+          , "to":1944465696
+        }
+        , {
+          "from":1971345760
+          , "to":1971311824
+        }
+        , {
+          "from":1971345760
+          , "to":1944401344
+        }
+        , {
+          "from":1944465696
+          , "to":1914426112
+        }
+        , {
+          "from":1971311824
+          , "to":1914426112
+        }
+        , {
+          "from":1944401344
+          , "to":1914426112
+        }
+        , {
+          "from":1914426112
+          , "to":1914412464
+        }
+        , {
+          "from":1971345760
+          , "to":1914412464
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1971408944"
+      , "dst":"1914451760"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi2EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"149"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1971408944
+          , "start":"6.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944475472
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1944335888
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971375024
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1914447680
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1914451760
+          , "end":"12.00"
+          , "parent":"_ZTS6KernelILi2EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1971408944
+          , "to":1944475472
+        }
+        , {
+          "from":1971408944
+          , "to":1944335888
+        }
+        , {
+          "from":1971408944
+          , "to":1971375024
+        }
+        , {
+          "from":1944475472
+          , "to":1914447680
+        }
+        , {
+          "from":1944335888
+          , "to":1914447680
+        }
+        , {
+          "from":1971375024
+          , "to":1914447680
+        }
+        , {
+          "from":1914447680
+          , "to":1914451760
+        }
+        , {
+          "from":1971408944
+          , "to":1914451760
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1913820768"
+      , "dst":"1912203504"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi1EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"116"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Trunc(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Or(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1913820768
+          , "start":"2.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1955429936
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1909140832
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1950412288
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1944190560
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1975554640
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1946851024
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1945576448
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Trunc"
+          , "id":1915694624
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1973747168
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1973746432
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1973745696
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1973752320
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1919302480
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1916541840
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Or"
+          , "id":1946504368
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1916549200
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1912203504
+          , "end":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1913820768
+          , "to":1975554640
+        }
+        , {
+          "from":1950412288
+          , "to":1973747168
+        }
+        , {
+          "from":1973747168
+          , "to":1973746432
+        }
+        , {
+          "from":1975554640
+          , "to":1973745696
+        }
+        , {
+          "from":1973745696
+          , "to":1973752320
+        }
+        , {
+          "from":1945576448
+          , "to":1919302480
+        }
+        , {
+          "from":1919302480
+          , "to":1916541840
+        }
+        , {
+          "from":1955429936
+          , "to":1946504368
+        }
+        , {
+          "from":1946504368
+          , "to":1916549200
+        }
+        , {
+          "from":1973752320
+          , "to":1912203504
+        }
+        , {
+          "from":1913820768
+          , "to":1912203504
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1971218608"
+      , "dst":"1911223456"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi1EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"116"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1971218608
+          , "start":"2.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971147936
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1950412288
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1929099360
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1973746432
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1911223456
+          , "end":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1971218608
+          , "to":1971147936
+        }
+        , {
+          "from":1971218608
+          , "to":1950412288
+        }
+        , {
+          "from":1971218608
+          , "to":1929099360
+        }
+        , {
+          "from":1971147936
+          , "to":1973746432
+        }
+        , {
+          "from":1950412288
+          , "to":1973746432
+        }
+        , {
+          "from":1929099360
+          , "to":1973746432
+        }
+        , {
+          "from":1973746432
+          , "to":1911223456
+        }
+        , {
+          "from":1971218608
+          , "to":1911223456
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1971282640"
+      , "dst":"1973322048"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi1EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"116"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1971282640
+          , "start":"2.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1955429936
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971248416
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971088528
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1916549200
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1973322048
+          , "end":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1971282640
+          , "to":1955429936
+        }
+        , {
+          "from":1971282640
+          , "to":1971248416
+        }
+        , {
+          "from":1971282640
+          , "to":1971088528
+        }
+        , {
+          "from":1955429936
+          , "to":1916549200
+        }
+        , {
+          "from":1971248416
+          , "to":1916549200
+        }
+        , {
+          "from":1971088528
+          , "to":1916549200
+        }
+        , {
+          "from":1916549200
+          , "to":1973322048
+        }
+        , {
+          "from":1971282640
+          , "to":1973322048
+          , "reverse":1
+        }
+      ]
+    }
+    , {
+      "name":"dict_offset"
+      , "id":4294967295
+      , "src":"1913756096"
+      , "dst":"1974886592"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS6KernelILi1EE.B3"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"dict_offset"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"116"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"47"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                  , "line":"54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"dict_offset"
+          , "id":1913756096
+          , "start":"2.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1945576448
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1913720912
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":1971118464
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":47
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":1916541840
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":1974886592
+          , "end":"4.00"
+          , "parent":"_ZTS6KernelILi1EE.B3"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/memory_attributes/build/src/memory_attributes.cpp"
+                , "line":54
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":1913756096
+          , "to":1945576448
+        }
+        , {
+          "from":1913756096
+          , "to":1913720912
+        }
+        , {
+          "from":1913756096
+          , "to":1971118464
+        }
+        , {
+          "from":1945576448
+          , "to":1916541840
+        }
+        , {
+          "from":1913720912
+          , "to":1916541840
+        }
+        , {
+          "from":1971118464
+          , "to":1916541840
+        }
+        , {
+          "from":1916541840
+          , "to":1974886592
+        }
+        , {
+          "from":1913756096
+          , "to":1974886592
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}
