@@ -1,0 +1,75 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ProducerTutorial"
+      , "id":3412815832
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ProducerTutorial.B0"
+          , "id":3413071824
+          , "type":"bb"
+        }
+        , {
+          "name":"ProducerTutorial.B1"
+          , "id":3413075360
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3416066800
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ProducerTutorial.B2"
+          , "id":3413075440
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"ConsumerTutorial"
+      , "id":3412974552
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"ConsumerTutorial.B2"
+          , "id":3413738656
+          , "type":"bb"
+        }
+        , {
+          "name":"ConsumerTutorial.B1"
+          , "id":3413737712
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":3420915648
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":3423395216
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ConsumerTutorial.B0"
+          , "id":3413736368
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
