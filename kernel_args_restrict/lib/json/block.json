@@ -1,0 +1,1766 @@
+{
+  "929456976":
+  {
+    "nodes":
+    [
+      {
+        "name":"+"
+        , "id":933864480
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Add"
+            , "Constant Operand":"-1 (0xFFFFFFFFFFFFFFFF)"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Src"
+        , "id":935269776
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Source"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg0>"
+        , "id":936746688
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":936747536
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Compare"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg0>"
+        , "id":936784960
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":943602624
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"65-bit Integer Add"
+            , "Constant Operand":"-1 (0x1FFFFFFFFFFFFFFFF)"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":945986880
+        , "start":"1.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Select"
+            , "Start Cycle":"1"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Src"
+        , "id":948283760
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Source"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg0>"
+        , "id":950791968
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"?"
+        , "id":951500960
+        , "start":"1.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Read"
+            , "Variable":"Unknown variable"
+            , "Start Cycle":"1"
+            , "Latency":"1"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":951740144
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Compare"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":933864480
+        , "to":943602624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":936746688
+        , "to":951740144
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":936747536
+        , "to":935269776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":936784960
+        , "to":936747536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":943602624
+        , "to":948283760
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"65"
+          }
+        ]
+      }
+      , {
+        "from":945986880
+        , "to":933864480
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":950791968
+        , "to":945986880
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":951740144
+        , "to":945986880
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+    ]
+  }
+  , "929467552":
+  {
+    "nodes":
+    [
+      {
+        "name":"Loop Orch"
+        , "id":933230896
+        , "start":"251.00"
+        , "end":"252.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Loop Orchestration Logic"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":935465280
+        , "start":"251.00"
+        , "end":"252.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+            , "Start Cycle":"251"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ST"
+        , "id":936201520
+        , "start":"458.00"
+        , "end":"500.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Store"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"458"
+            , "Latency":"42"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":59
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Feedback"
+        , "id":936350272
+        , "start":"251.00"
+        , "end":"252.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Write"
+            , "Variable":"Global variable"
+            , "Feedback FIFO Depth":"2"
+            , "Feedback FIFO Width":"64"
+            , "Start Cycle":"251"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":937511248
+        , "start":"250.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+            , "Start Cycle":"250"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":937563776
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Add"
+            , "Constant Operand":"1 (0x1)"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg8>"
+        , "id":943699136
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg8>'"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":945215760
+        , "start":"250.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+            , "Start Cycle":"250"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Global variable"
+        , "id":945252432
+        , "start":"250.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Read"
+            , "Variable":"Global variable"
+            , "Start Cycle":"250"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Dest"
+        , "id":945293472
+        , "start":"250.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Destination"
+            , "Start Cycle":"250"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":945308080
+        , "start":"251.00"
+        , "end":"458.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"251"
+            , "Latency":"207"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":1524
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":945308720
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":894
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg5>"
+        , "id":949434128
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg5>'"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":949548016
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":894
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":949564800
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+              , "line":1538
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Or"
+        , "id":949565712
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"1-bit Or"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":58
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Global variable"
+        , "id":949566576
+        , "start":"250.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Read"
+            , "Variable":"Global variable"
+            , "Start Cycle":"250"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":59
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Feedback"
+        , "id":949623952
+        , "start":"500.00"
+        , "end":"501.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Write"
+            , "Variable":"Global variable"
+            , "Feedback FIFO Depth":"2"
+            , "Feedback FIFO Width":"1"
+            , "Start Cycle":"500"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":59
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg1>"
+        , "id":950058480
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg1>'"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"LD"
+        , "id":950699904
+        , "start":"251.00"
+        , "end":"458.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"251"
+            , "Latency":"207"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":59
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg4>"
+        , "id":950700464
+        , "start":"251.00"
+        , "end":"251.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg4>'"
+            , "Start Cycle":"251"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":933230896
+        , "to":935465280
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":933230896
+        , "to":936350272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":933230896
+        , "to":945252432
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":933230896
+        , "to":949565712
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":933230896
+        , "to":949566576
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":933230896
+        , "to":949623952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":935465280
+        , "to":936201520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":936201520
+        , "to":949623952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":936350272
+        , "to":945252432
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":937511248
+        , "to":933230896
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"65"
+          }
+        ]
+      }
+      , {
+        "from":937511248
+        , "to":936350272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"65"
+          }
+        ]
+      }
+      , {
+        "from":937511248
+        , "to":949623952
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"65"
+          }
+        ]
+      }
+      , {
+        "from":937563776
+        , "to":936350272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":943699136
+        , "to":949548016
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945215760
+        , "to":949565712
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":945252432
+        , "to":937563776
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945252432
+        , "to":945308080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945252432
+        , "to":949564800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945293472
+        , "to":935465280
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":945308080
+        , "to":936201520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945308720
+        , "to":945308080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":949434128
+        , "to":949548016
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":949548016
+        , "to":949564800
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":949564800
+        , "to":950699904
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":949565712
+        , "to":950699904
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":949566576
+        , "to":950699904
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":949623952
+        , "to":949566576
+        , "reverse":1
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":950058480
+        , "to":945308720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":950699904
+        , "to":936201520
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":950700464
+        , "to":945308720
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+    ]
+  }
+  , "929467632":
+  {
+    "nodes":
+    [
+      {
+        "name":"Feedback"
+        , "id":935442496
+        , "start":"0.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Write"
+            , "Variable":"Unknown variable"
+            , "Feedback FIFO Depth":"1"
+            , "Feedback FIFO Width":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+  , "930118032":
+  {
+    "nodes":
+    [
+      {
+        "name":"<arg0>"
+        , "id":933891760
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":933892816
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Compare"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg0>"
+        , "id":935097904
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Src"
+        , "id":935463184
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Source"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"?"
+        , "id":943958800
+        , "start":"1.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Read"
+            , "Variable":"Unknown variable"
+            , "Start Cycle":"1"
+            , "Latency":"1"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<arg0>"
+        , "id":943960272
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for '<arg0>'"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Compare"
+        , "id":945674416
+        , "start":"1.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Compare"
+            , "Start Cycle":"1"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Select"
+        , "id":945977472
+        , "start":"1.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Select"
+            , "Start Cycle":"1"
+            , "Latency":"1"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":945978112
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Integer Add"
+            , "Constant Operand":"-1 (0xFFFFFFFFFFFFFFFF)"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"FFwd Src"
+        , "id":949405056
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"FFwd Source"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"+"
+        , "id":950777840
+        , "start":"2.00"
+        , "end":"2.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"65-bit Integer Add"
+            , "Constant Operand":"-1 (0x1FFFFFFFFFFFFFFFF)"
+            , "Start Cycle":"2"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":933891760
+        , "to":933892816
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":933892816
+        , "to":945977472
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":935097904
+        , "to":945977472
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":943960272
+        , "to":945674416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945674416
+        , "to":935463184
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":945977472
+        , "to":945978112
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":945978112
+        , "to":950777840
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":950777840
+        , "to":949405056
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"65"
+          }
+        ]
+      }
+    ]
+  }
+  , "930128160":
+  {
+    "nodes":
+    [
+      {
+        "name":"Cluster 0"
+        , "id":940650336
+        , "start":"1.00"
+        , "end":"5.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Cluster Name":"i_sfc_s_c0_in_lr_ph_zts18kernelargsrestricts_c0_enter1_k1_zts18kernelargsrestrict1"
+            , "Cluster Type":"Stall-Free"
+            , "Cluster Start Cycle":"1"
+            , "Cluster Latency":"4"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Logic"
+            , "id":941976848
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Logic Start Cycle":"1"
+                , "Cluster Logic Latency":"1"
+              }
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Exit"
+            , "id":937740032
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Start Cycle":"2"
+                , "Latency":"3"
+                , "Exit FIFO Depth":"32"
+                , "Exit FIFO Width":"320"
+                , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+              }
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"LD"
+        , "id":935428544
+        , "start":"5.00"
+        , "end":"8.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Load"
+            , "Width":"32 bits"
+            , "LSU Style":"Prefetching"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"5"
+            , "Latency":"3"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":71
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Loop Orch"
+        , "id":936742832
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Loop Orchestration Logic"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":70
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"ST"
+        , "id":945963536
+        , "start":"8.00"
+        , "end":"10.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Store"
+            , "Width":"32 bits"
+            , "LSU Style":"Burst-coalesced"
+            , "Stall-free":"No"
+            , "Global Memory":"Yes"
+            , "Start Cycle":"8"
+            , "Latency":"2"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+              , "line":71
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":941976848
+        , "to":937740032
+      }
+      , {
+        "from":935428544
+        , "to":945963536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":937740032
+        , "to":935428544
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"320"
+          }
+        ]
+      }
+      , {
+        "from":936742832
+        , "to":941976848
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1"
+          }
+        ]
+      }
+      , {
+        "from":937740032
+        , "to":945963536
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"320"
+          }
+        ]
+      }
+    ]
+  }
+  , "930132864":
+  {
+    "nodes":
+    [
+      {
+        "name":"Feedback"
+        , "id":945294240
+        , "start":"0.00"
+        , "end":"1.00"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Feedback Write"
+            , "Variable":"Unknown variable"
+            , "Feedback FIFO Depth":"1"
+            , "Feedback FIFO Width":"1"
+            , "Start Cycle":"0"
+            , "Latency":"1"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

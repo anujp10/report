@@ -1,0 +1,145 @@
+{
+  "bottlenecks":
+  [
+    {
+      "name":"Global variable"
+      , "id":4294967295
+      , "src":"949566576"
+      , "dst":"949623952"
+      , "type":"fMAX/II"
+      , "brief":"Memory dependency"
+      , "loop":"_ZTS20KernelArgsNoRestrict.B1"
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Variable on critical loop carried feedback path: ":"Global variable"
+          , "Declared at: ":
+          [
+            {
+              "type":"text"
+              , "text":"%L"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+          ]
+          , "Dependency: ":"Memory dependency"
+          , "Estimated fmax reduced to: ":"240.0"
+          , "Loop feedback path that lowered II and Fmax: ":
+          [
+            {
+              "type":"text"
+              , "text":"LD(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"ST(%L)"
+              , "links":
+              [
+                {
+                  "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                  , "line":"59"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "nodes":
+      [
+        {
+          "name":"Global variable"
+          , "id":949566576
+          , "start":"250.00"
+          , "parent":"_ZTS20KernelArgsNoRestrict.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"LD"
+          , "id":950699904
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"ST"
+          , "id":936201520
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Feedback"
+          , "id":949623952
+          , "end":"501.00"
+          , "parent":"_ZTS20KernelArgsNoRestrict.B1"
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                , "line":59
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+      , "links":
+      [
+        {
+          "from":949566576
+          , "to":950699904
+        }
+        , {
+          "from":950699904
+          , "to":936201520
+        }
+        , {
+          "from":936201520
+          , "to":949623952
+        }
+        , {
+          "from":949566576
+          , "to":949623952
+          , "reverse":1
+        }
+      ]
+    }
+  ]
+}

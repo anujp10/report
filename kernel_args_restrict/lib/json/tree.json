@@ -1,0 +1,62 @@
+{
+  "nodes":
+  [
+    {
+      "name":"KernelArgsNoRestrict"
+      , "id":929206968
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelArgsNoRestrict.B1"
+          , "id":929467552
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelArgsNoRestrict.B0"
+          , "id":929456976
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelArgsNoRestrict.B2"
+          , "id":929467632
+          , "type":"bb"
+        }
+      ]
+    }
+    , {
+      "name":"KernelArgsRestrict"
+      , "id":929366424
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"KernelArgsRestrict.B2"
+          , "id":930132864
+          , "type":"bb"
+        }
+        , {
+          "name":"KernelArgsRestrict.B1"
+          , "id":930128160
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":940650336
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsRestrict.B0"
+          , "id":930118032
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

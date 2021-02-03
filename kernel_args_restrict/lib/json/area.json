@@ -1,0 +1,1117 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [42.8076, 22.1861, 21.9336, 21.784, 8.10277]
+  , "total":
+  [187778, 374801, 591, 123, 89]
+  , "name":"Kernel System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [179950, 358572, 492, 123, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [2295, 2568, 61, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 2 global loads and 2 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 2 global loads and 2 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/hnj1476724450050.html"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [0, 67, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes. The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"KernelArgsRestrict"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.695585, 0.405548, 0.321922, 0.479174, 0]
+      , "total_kernel_resources":
+      [2505, 5501, 13, 0, 48]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1338, 2411, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'LinearIndex' (accessor.hpp:1523)\n - 'LinearIndex' (accessor.hpp:1537)\n - 'i' (kernel_args_restrict.cpp:70)"
+          , "type":"resource"
+          , "data":
+          [7, 69, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":1523
+              }
+            ]
+            , [
+              {
+                "filename":"accessor.hpp"
+                , "line":1537
+              }
+            ]
+            , [
+              {
+                "filename":"kernel_args_restrict.cpp"
+                , "line":70
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 65 bits and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 65 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'i' (kernel_args_restrict.cpp:70)"
+          , "type":"resource"
+          , "data":
+          [7, 68, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"kernel_args_restrict.cpp"
+                , "line":70
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 64 bits and depth 1"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 64 width by 1 depth"
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsRestrict.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2, 66, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:70"
+                  , "type":"resource"
+                  , "data":
+                  [2, 66, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [8, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [8, 2, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:70"
+                  , "type":"resource"
+                  , "data":
+                  [152, 65, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [88, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsRestrict.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [104, 203, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [104, 203, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [41, 35, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:70"
+                  , "type":"resource"
+                  , "data":
+                  [41, 35, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [8, 6, 0, 0, 7]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:70"
+                  , "type":"resource"
+                  , "data":
+                  [82, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"65-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [22, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"65-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [52, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"kernel_args_restrict.cpp:71"
+                  , "type":"resource"
+                  , "data":
+                  [751, 2568, 13, 0, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [360, 440, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Prefetching LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Prefetching LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [391, 2128, 0, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsRestrict.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"KernelArgsNoRestrict"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [0.900183, 0.450375, 0.473607, 0.84777, 0]
+      , "total_kernel_resources":
+      [3028, 8093, 23, 0, 41]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1338, 2411, 0, 0, 10]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'LinearIndex' (accessor.hpp:1523)\n - 'LinearIndex' (accessor.hpp:1537)\n - 'i' (kernel_args_restrict.cpp:58)"
+          , "type":"resource"
+          , "data":
+          [59, 403, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"accessor.hpp"
+                , "line":1523
+              }
+            ]
+            , [
+              {
+                "filename":"accessor.hpp"
+                , "line":1537
+              }
+            ]
+            , [
+              {
+                "filename":"kernel_args_restrict.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 65 bits and depth 4"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 250 due to a loop initiation interval of 250."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 65 width by 4 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'i' (kernel_args_restrict.cpp:58)"
+          , "type":"resource"
+          , "data":
+          [58, 397, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"kernel_args_restrict.cpp"
+                , "line":58
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 64 bits and depth 4"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":" Depth was increased by a factor of 250 due to a loop initiation interval of 250."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 64 width by 4 depth"
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsNoRestrict.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2, 66, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:58"
+                  , "type":"resource"
+                  , "data":
+                  [2, 66, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [8, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [8, 2, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:58"
+                  , "type":"resource"
+                  , "data":
+                  [152, 65, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":58
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [88, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"64-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [64, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsNoRestrict.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [169, 181, 7, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [169, 181, 7, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [229, 274, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:58"
+                  , "type":"resource"
+                  , "data":
+                  [208, 260, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":58
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"kernel_args_restrict.cpp:59"
+                  , "type":"resource"
+                  , "data":
+                  [21, 14, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"kernel_args_restrict.cpp:58"
+                  , "type":"resource"
+                  , "data":
+                  [102, 20, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":58
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [3, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"65-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [22, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"65-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [52, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"FFwd Destination"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [8, 8, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Iteration Initiation"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [12, 10, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"kernel_args_restrict.cpp:59"
+                  , "type":"resource"
+                  , "data":
+                  [906, 4266, 16, 0, 31]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/Features/kernel_args_restrict/build/src/kernel_args_restrict.cpp"
+                        , "line":59
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 15, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [402, 2216, 1, 0, 31]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"KernelArgsNoRestrict.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
