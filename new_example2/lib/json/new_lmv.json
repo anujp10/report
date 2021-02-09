@@ -1,0 +1,215 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ImplicitKernel"
+      , "id":3163349736
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"_arg_"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/DesignPatterns/explicit_data_movement/build/src/explicit_data_movement.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Unknown Name #0"
+              , "id":3
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/DesignPatterns/explicit_data_movement/build/src/explicit_data_movement.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"AccessRange"
+              , "id":4
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"882"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":882
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"MemRange"
+              , "id":5
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Offset"
+              , "id":6
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id"
+              , "id":7
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
