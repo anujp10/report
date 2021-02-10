@@ -1,0 +1,1258 @@
+{
+  "nodes":
+  [
+    {
+      "name":"VectorAdd"
+      , "id":1298823288
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"temp_a"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"40 kilobytes"
+                  , "Implemented size":"64 kilobytes = (8192 words per bank) x (8 bytes per word)"
+                  , "Memory Usage":"32 RAMs"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"8 bytes"
+                  , "Bank depth":"8192 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "RAM Mode":"Simple dual-port"
+                  , "Pump configuration":"Single-pumped"
+                  , "Additional information":"In each private copy:</br>  Variable 'temp_a' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                  , "User defined attributes":"memory, bankwidth(8)"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":3
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"32 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"8192 words"
+                      , "Implemented bank size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                      , "Number of active ports":"1"
+                      , "Number of write ports":"1"
+                      , "Number of un-used ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'temp_a' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":4
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                          , "Memory Usage":"32 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"0"
+                          , "Number of write ports":"1"
+                          , "Number of un-used ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'temp_a' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                            , "line":77
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"W"
+                          , "id":5
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy":"8192 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'temp_a' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"temp_b"
+              , "id":6
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                          , "line":"78"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"40 kilobytes"
+                  , "Implemented size":"64 kilobytes = (8192 words per bank) x (8 bytes per word)"
+                  , "Memory Usage":"32 RAMs"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"8 bytes"
+                  , "Bank depth":"8192 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "RAM Mode":"Simple dual-port"
+                  , "Pump configuration":"Single-pumped"
+                  , "Additional information":"In each private copy:</br>  Variable 'temp_b' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                  , "User defined attributes":"memory, bankwidth(8)"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                    , "line":78
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":7
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"32 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"8192 words"
+                      , "Implemented bank size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                      , "Number of active ports":"1"
+                      , "Number of write ports":"1"
+                      , "Number of un-used ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'temp_b' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                        , "line":78
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":8
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                          , "Memory Usage":"32 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"0"
+                          , "Number of write ports":"1"
+                          , "Number of un-used ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'temp_b' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                            , "line":78
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"W"
+                          , "id":9
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy":"8192 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'temp_b' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"temp_c"
+              , "id":10
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                          , "line":"79"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Requested size":"40 kilobytes"
+                  , "Implemented size":"64 kilobytes = (8192 words per bank) x (8 bytes per word)"
+                  , "Memory Usage":"32 RAMs"
+                  , "Number of banks":"1"
+                  , "Bank width (word size)":"8 bytes"
+                  , "Bank depth":"8192 words"
+                  , "Number of replicates":"1"
+                  , "Number of private copies":"1"
+                  , "RAM Mode":"Simple dual-port"
+                  , "Pump configuration":"Single-pumped"
+                  , "Additional information":"In each private copy:</br>  Variable 'temp_c' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                  , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                  , "User defined attributes":"memory, bankwidth(8)"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Local Memory"
+                          , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/chn1469549457114.html"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                    , "line":79
+                  }
+                ]
+              ]
+              , "type":"memsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":11
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Memory Usage":"32 RAMs"
+                      , "Bank width":"8 bytes"
+                      , "Bank depth":"8192 words"
+                      , "Implemented bank size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                      , "Number of active ports":"2"
+                      , "Number of read ports":"1"
+                      , "Number of write ports":"1"
+                      , "Additional information":"In each private copy:</br>  Variable 'temp_c' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                      , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                    }
+                  ]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                        , "line":79
+                      }
+                    ]
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":12
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Implemented size":"64 kilobytes = (8192 words) x (8 bytes per word)"
+                          , "Memory Usage":"32 RAMs"
+                          , "Number of physical ports":"2"
+                          , "Number of read ports":"1"
+                          , "Number of write ports":"1"
+                          , "Additional information":"In each private copy:</br>  Variable 'temp_c' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                          , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                        }
+                      ]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                            , "line":79
+                          }
+                        ]
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":13
+                          , "type":"port"
+                        }
+                        , {
+                          "name":"W"
+                          , "id":14
+                          , "type":"port"
+                        }
+                      ]
+                      , "copies":
+                      {
+                        "num":1
+                        , "details":
+                        [
+                          {
+                            "type":"table"
+                            , "Width":"8 bytes"
+                            , "Depth per copy":"8192 words"
+                            , "Number of private copies":"1"
+                            , "Additional information":"In each private copy:</br>  Variable 'temp_c' occupies memory words [0-5119] and has 2 array elements per memory word.</br>  Memory words [5120-8191] are unused padding."
+                            , "Address bit information":"<table><tr><td>Byte address</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td>b<sub>2</sub></td><td>b<sub>1</sub></td><td>b<sub>0</sub></td></tr><tr><td>Sub-word bits</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td></tr><tr><td>Word address bits</td><td>b<sub>15</sub></td><td>b<sub>14</sub></td><td>b<sub>13</sub></td><td>b<sub>12</sub></td><td>b<sub>11</sub></td><td>b<sub>10</sub></td><td>b<sub>9</sub></td><td>b<sub>8</sub></td><td>b<sub>7</sub></td><td>b<sub>6</sub></td><td>b<sub>5</sub></td><td>b<sub>4</sub></td><td>b<sub>3</sub></td><td></td><td></td><td></td></tr></table>"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"_arg_"
+              , "id":15
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Unknown Name #0"
+              , "id":16
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                          , "line":"0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "type":"unsynth"
+            }
+            , {
+              "name":"AccessRange (inline#0)"
+              , "id":17
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"882"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":882
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"AccessRange (inline#1)"
+              , "id":18
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"882"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":882
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"MemRange (inline#0)"
+              , "id":19
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"MemRange (inline#1)"
+              , "id":20
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Offset (inline#0)"
+              , "id":21
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Offset (inline#1)"
+              , "id":22
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"AccessRange"
+              , "id":23
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"882"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":882
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"MemRange"
+              , "id":24
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Offset"
+              , "id":25
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"883"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":883
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id (inline#0)"
+              , "id":26
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id (inline#1)"
+              , "id":27
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id (inline#2)"
+              , "id":28
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id (inline#3)"
+              , "id":29
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"Id"
+              , "id":30
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                          , "line":"807"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/bin/../include/sycl/CL/sycl/accessor.hpp"
+                    , "line":807
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+        , {
+          "name":"Store"
+          , "id":1298966256
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"temp_a"
+              , "Start cycle":"228"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"82"
+                    }
+                    , {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"0"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":82
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":1299292848
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"temp_b"
+              , "Start cycle":"228"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"83"
+                    }
+                    , {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"0"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":83
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":1299758960
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Loads from":"temp_c"
+              , "Start cycle":"2"
+              , "Latency":"3"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"91"
+                    }
+                    , {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"0"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":91
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Store"
+          , "id":1299293488
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Stall-free":"Yes"
+              , "Type":"Pipelined never-stall"
+              , "Stores to":"temp_c"
+              , "Start cycle":"228"
+              , "Latency":"1"
+              , "Inlined Debug Locations":
+              [
+                {
+                  "type":"text"
+                  , "text":"%L > %L"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"87"
+                    }
+                    , {
+                      "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                      , "line":"0"
+                    }
+                  ]
+                }
+              ]
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Best Practices Guide : Load-Store Units"
+                      , "link":"file:////glob/development-tools/versions/oneapi/gold/inteloneapi/compiler/2021.1.2/linux/lib/oclfpga/aoc_help_pages/yeo1491314105959.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":87
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":1298966256
+      , "to":5
+    }
+    , {
+      "from":1299292848
+      , "to":9
+    }
+    , {
+      "from":13
+      , "to":1299758960
+    }
+    , {
+      "from":1299293488
+      , "to":14
+    }
+  ]
+}

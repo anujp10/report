@@ -1,0 +1,57 @@
+{
+  "nodes":
+  [
+    {
+      "name":"VectorAdd"
+      , "id":1298823288
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"VectorAdd.B3"
+          , "id":1298981152
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":1303619328
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"Fused loop VectorAdd.B1"
+          , "id":1299290016
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1302106128
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"VectorAdd.B2"
+          , "id":1298981072
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B0"
+          , "id":1299289616
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B4"
+          , "id":1298981232
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

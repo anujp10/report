@@ -1,0 +1,129 @@
+{
+  "name":"loop_attributes"
+  , "id":4294967295
+  , "nodes":
+  [
+    {
+      "name":"k0_ZTS9VectorAdd"
+      , "id":1299773616
+      , "clk":"No"
+      , "fmax":"240.00"
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"VectorAdd.B0"
+          , "id":1299289616
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"2.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"Fused loop VectorAdd.B1"
+          , "id":1299290016
+          , "af":"240.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"229.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"10240"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: n/a"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":86
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"VectorAdd.B2"
+          , "id":1298981072
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"0.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B3"
+          , "id":1298981152
+          , "af":"240.00"
+          , "br":"1"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"11.000000"
+          , "mi":"1"
+          , "pl":"Yes"
+          , "tc":"10240"
+          , "tn":"1"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: n/a"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/u58822/One-API/oneAPI-samples/DirectProgramming/DPC++FPGA/Tutorials/GettingStarted/fpga_compile/build/src/fpga_compile.cpp"
+                , "line":90
+              }
+            ]
+          ]
+          , "type":"loop"
+        }
+        , {
+          "name":"VectorAdd.B4"
+          , "id":1298981232
+          , "af":"240.00"
+          , "br":"0"
+          , "ci":"0"
+          , "fo":"Disabled"
+          , "ii":"1"
+          , "ll":"1"
+          , "lt":"1.000000"
+          , "mi":"n/a"
+          , "pl":"Yes"
+          , "tc":"0"
+          , "tn":"1"
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+}
