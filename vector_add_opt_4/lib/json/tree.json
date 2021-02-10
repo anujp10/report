@@ -1,0 +1,31 @@
+{
+  "nodes":
+  [
+    {
+      "name":"VectorAdd"
+      , "id":2328673688
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"VectorAdd.B0"
+          , "id":2329124896
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B1"
+          , "id":2328831632
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B2"
+          , "id":2328831712
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
