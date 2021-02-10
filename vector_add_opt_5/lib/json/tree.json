@@ -1,0 +1,49 @@
+{
+  "nodes":
+  [
+    {
+      "name":"VectorAdd"
+      , "id":808214248
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"VectorAdd.B1"
+          , "id":808682096
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B2"
+          , "id":808682912
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":811476192
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"VectorAdd.B3"
+          , "id":808682992
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B4"
+          , "id":808683072
+          , "type":"bb"
+        }
+        , {
+          "name":"VectorAdd.B0"
+          , "id":808681696
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
